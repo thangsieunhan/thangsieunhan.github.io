@@ -1,0 +1,744 @@
+/*------------------------------------------------------------------
+    IMPORT FONTS
+-------------------------------------------------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700');
+
+
+/*
+
+    font-family: 'Dosis', sans-serif;
+
+*/
+
+/*------------------------------------------------------------------
+    IMPORT FILES
+-------------------------------------------------------------------*/
+
+@import url(all.css); /* Bieu tuong button */
+@import url(bootsnav.css);
+
+/*------------------------------------------------------------------
+    SKELETON
+-------------------------------------------------------------------*/
+    ::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: #F5F5F5;
+}
+ ::-webkit-scrollbar-thumb {
+    background-color: #b0ae17;
+    opacity: 0.7;
+}
+@media only screen and (max-width: 600px) {
+    pre {
+      font-size: 14px;
+      padding: 5px;
+    }
+  }
+
+ body {
+     color: #666666;
+     font-size: 15px;
+     font-family: 'Dosis', sans-serif;
+     line-height: 1.8;  
+}
+
+ h1, h2, h3, h4, h5, h6 {
+     font-weight: normal;
+     position: relative;
+     padding: 0 0 10px 0;
+     font-weight: normal;
+     color: #1f1f1f;
+     margin: 0 
+}
+
+ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+     color: #212121;
+     opacity: 1
+}
+
+ a, .btn {
+     text-decoration: none !important;
+     transition: all .3s ease-in-out;
+}
+
+ ul, li, ol{
+     list-style: none;
+     margin: 0px;
+     padding: 0px;
+}
+
+ p{
+     margin: 0px;
+ }
+/*------------------------------------------------------------------ LOADER -------------------------------------------------------------------*/
+ #back-to-top {
+     position: fixed;
+     bottom: 40px;
+     right: 40px;
+     width: 32px;
+     height: 32px;
+     text-align: center;
+     line-height: 25px;
+     background: #b0b435;
+     color: #ffffff;
+     border: 0;
+     font-size: 28px;
+}
+/*------------------------------------------------------------------ HEADER -------------------------------------------------------------------*/
+
+ nav.navbar.bootsnav ul.nav > li > a{    /* thanh menu */
+     position: relative;
+     font-weight: 700;
+     font-size: 18px;
+     color: #000000;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-left: 10px;
+     padding-right: 30px;
+}
+
+ nav.navbar.bootsnav ul.nav li.active > a:hover{   /* màu của thanh menu hiện tại */
+     color: #b0b435;
+}
+ nav.navbar.bootsnav ul.nav li > a:hover{  /* màu của thanh menu */
+     color: #b0b435;
+}
+
+
+ .dropdown-toggle::after{
+     display: none;
+}
+ nav.navbar.bootsnav ul.navbar-nav li.dropdown ul.dropdown-menu li a{  /* bang chon shop */
+     display: block;
+	 padding: 6px 25px;
+}
+ .hvr-hover{                        /* shop new */
+    color: #ffffff;
+     position: relative;
+     background: #b0b435;
+     border-radius: 0;
+     box-shadow: none;
+}
+ .hvr-hover:hover{
+	 overflow: hidden;
+     color: white;
+     background: black;
+}
+/*------------------------------------------------------------------ Slider -------------------------------------------------------------------*/
+
+ .cover-slides .container{
+     height: 100%;
+     position: relative;
+     z-index: 2;
+}
+ .cover-slides .container > .row {
+     align-items: center; 
+     height: 100%; 
+}
+ .overlay-background {
+     background: #333;
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     left: 0;
+     top: 0;
+     opacity: 0.5;
+}
+ .cover-slides h1{
+     font-family: 'Zapf Chancery', cursive;
+     font-weight: 500;
+     font-size: 64px;
+     color: #ffffff;
+     padding-bottom: 60px;
+}
+ .cover-slides p{
+     font-size: 20px;
+     color: #fff;
+     padding-bottom: 30px;
+}
+ .cover-slides p a{    /* Shop new */
+     font-size: 24px;
+     color: #ffffff;
+     text-transform: uppercase;
+     padding: 10px 20px;
+}
+/*------------------------------------------------------------------ Categories Shop -------------------------------------------------------------------*/
+ .categories-shop{
+     padding: 70px 0px;
+}
+ .shop-cat-box{
+     margin-bottom: 30px;
+     position: relative;
+     overflow: hidden;
+     
+}
+ .shop-cat-box img{
+     margin: -10px 0 0 -10px;
+     max-width: none;
+     width: calc(100% + 10px);
+     opacity: 0.9;
+     transition: opacity 0.35s, transform 0.35s;
+     transform: translate3d(10px,10px,0);
+}
+ .shop-cat-box:hover img{  /* hieu ung anh */
+     opacity: 0.5;
+     transform: translate3d(0,0,0);
+}
+ .shop-cat-box a{
+     position: absolute;
+     bottom: 0px;
+     left: 0px;
+     right: 0;
+     margin: 0 auto;
+     text-align: center;
+     border: none;
+     color: #ffffff;
+     font-size: 18px;
+     font-weight: 700;
+     padding: 12px 0px;
+     
+}
+
+/*------------------------------------------------------------------ Products -------------------------------------------------------------------*/
+ .title-all{
+     margin-bottom: 30px;
+}
+ .title-all h1{
+     font-size: 32px;
+     font-weight: 700;
+     color: #000000;
+}
+ .title-all p{
+     color: #514f4f;
+     font-size: 16px;
+}
+ .products-box{
+     padding: 70px 0px;
+}
+ .special-menu{
+     margin-bottom: 40px;
+}
+ .filter-button-group{
+     display: inline-block;
+}
+ .filter-button-group button{
+     background: #000000;
+     color: #ffffff;
+     border: none;
+     padding: 5px 30px;
+     font-size: 18px;
+}
+ .products-single {
+     margin-bottom: 30px;
+}
+ .products-single .box-img-hover{
+     overflow: hidden;
+     position: relative;
+}
+ .box-img-hover img{
+     margin: 0 auto;
+     text-align: center;
+     display: block;
+}
+ .type-lb{
+     position: absolute;
+     top: 0px;
+     right: 0px;
+}
+ .type-lb .sale{
+     background: #b0b435;
+     color: #ffffff;
+     padding: 2px 10px;
+     font-weight: 700;
+     text-transform: uppercase;
+}
+ .type-lb .new{
+     background: #000000;
+     color: #ffffff;
+     padding: 2px 10px;
+     font-weight: 700;
+     text-transform: uppercase;
+}
+ .why-text{
+     background: #f5f5f5;
+     padding: 15px;
+}
+ .why-text h4{
+     font-size: 16px;
+     font-weight: 700;
+     padding-bottom: 15px;
+}
+.why-text h4 a:hover{
+    color: #b0b435;
+}
+ .why-text h5{
+     font-size: 18px;
+     font-family: 'Dosis', sans-serif;
+     padding: 4px;
+	 display: inline-block;
+	 background: #b0b435;
+	 color: #ffffff;
+     font-weight: 500;
+}
+ .mask-icon{
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     overflow: hidden;
+     top: 0;
+     left: 0;
+}
+ .mask-icon ul{
+     display: inline-block;
+	 position: absolute;
+	 bottom: 0;
+	 right: 0;
+}
+ .mask-icon ul li{
+     background: #b0b435;
+}
+ .mask-icon ul li a{
+     color: #ffffff;
+     padding: 5px 10px;
+     display: block;
+}
+ .mask-icon a.cart{
+     background: #b0b435;
+     position: absolute;
+     bottom: 0;
+     padding: 10px 20px;
+     font-weight: 700;
+     color: #ffffff;
+}
+ .mask-icon a.cart:hover{
+     background: #000000;
+     color: #ffffff;
+}
+ .mask-icon ul li a:hover{
+     background: #000000;
+     color: #ffffff;
+}
+ .products-single .mask-icon{
+     background: rgba(3, 3, 3, 0.5);
+     top: -100%;
+     opacity: 0;
+     transition: all 0.2s ease-out 0s;
+}
+ .products-single:hover .mask-icon{
+     opacity: 1;
+     top: 0px;
+     transition-delay: 0s;
+ }
+/*------------------------------------------------------------------ Blog -------------------------------------------------------------------*/
+ .latest-blog{
+     padding: 70px 0px;
+     background: #f5f5f5;
+}
+ .blog-box{
+     background: #ffffff;
+     margin-bottom: 30px;
+}
+ .blog-content{
+     position: relative;
+}
+ .title-blog{
+     padding: 40px 30px 40px 30px;
+}
+ .title-blog h3{
+     font-size: 20px;
+     font-weight: 700;
+     color: #000000;
+}
+ .title-blog p{
+     margin: 0px;
+}
+ .option-blog {
+     position: absolute;
+     bottom: 0px;
+     left: 0px;
+	 right: 0px;
+	 margin: 0 auto;
+	 text-align: center;
+}
+ .option-blog li{
+	 display: inline-block;
+ }
+ .option-blog li a{
+     background: #000000;
+     display: inline-block;
+     font-size: 18px;
+     color: #ffffff;
+     width: 34px;
+     height: 34px;
+     text-align: center;
+     line-height: 34px;
+}
+ .option-blog li a:hover{
+     background: #b0b435;
+     color: #ffffff;
+}
+
+/*------------------------------------------------------------------ Footer Main -------------------------------------------------------------------*/
+ .footer-main{
+     padding: 70px 0px;
+     background: #010101;
+     background-size: cover;
+     position: relative;
+     background: url(../images/footer-main.png) no-repeat center;
+	 background-size: cover;
+}
+.footer-main hr{
+	border-top: 2px solid rgba(85, 132, 132, 0.6);
+}
+.footer-top-box{
+	margin-bottom: 30px;
+}
+.footer-top-box h3{
+	color: #000000;
+	position: relative;
+	font-size: 20px;
+    position: relative;
+    font-weight: 500;
+}
+.footer-top-box h3::before {
+    border-bottom: 3px solid #b0b435;
+    content: "";
+    height: 3px;
+    width: 50%;
+    position: absolute;
+    bottom: 3px;
+    left: 0px;
+}
+.list-time{
+	margin-top: 15px;
+}
+.footer-top-box .list-time li{
+	color: #000000;
+	font-size: 16px;
+	display: block;
+	float: none;
+}
+
+ .footer-top-box p{
+    padding-top: 15px;
+	 padding-bottom: 15px;
+	 color: #000000;
+     font-size: 16px;
+ }
+
+ .footer-top-box ul{
+     display: inline-block;
+}
+ .footer-top-box ul li {
+     float: left;
+     margin-right: 5px;
+}
+ .footer-top-box ul li a {
+     color: #000000;
+     display: inline-block;
+     width: 36px;
+     height: 36px;
+     border: 2px solid #000000;  /* vien button */
+     text-align: center;
+     line-height: 32px;
+}
+ .footer-top-box ul li a:hover {
+     color: #b0b435;
+     border-color: #b0b435;
+}
+.footer-widget, .footer-link-contact{
+	margin-top: 15px;
+}
+ .footer-widget h4 {
+     color: #000000;
+     font-size: 20px;
+     margin-bottom: 20px;
+     position: relative;
+     font-weight: 500;
+
+}
+ .footer-widget h4::before {   /* gach ngang */
+     border-bottom: 3px solid #b0b435;
+     content: "";
+     height: 3px;
+     width: 100%;
+     position: absolute;
+     bottom: 3px;
+     left: 0px;
+}
+ .footer-widget p {
+     color: #000000;
+     font-weight: 400;
+     font-size: 16px;
+     padding-bottom: 10px;
+}
+.footer-widget p a {
+    color: #000000;
+}
+.footer-widget p a:hover{
+    color: #b0b435;
+}
+
+ .footer-link-contact h4{
+     color: #000000;
+     font-size: 20px;
+     margin-bottom: 20px;
+     position: relative;
+     font-weight: 500;
+}
+ .footer-link-contact h4::before {
+     border-bottom: 3px solid #b0b435;
+     content: "";
+     height: 3px;
+     width: 100%;
+     position: absolute;
+     bottom: 3px;
+     left: 0px;
+}
+ .footer-link-contact ul li{
+     margin-bottom: 10px;
+}
+ .footer-link-contact ul li i{
+     position: absolute;
+     left: 0;
+     top: 5px;
+}   
+ .footer-link-contact ul li p{
+     padding-left: 25px;
+     color: #000000;
+     position: relative;
+     font-size: 16px;
+     font-weight: 300;
+     line-height: 24px;
+}
+ .footer-link-contact ul li p a{
+     color: #000000;
+}
+ .footer-link-contact ul li p a:hover{
+     color: #b0b435;
+}
+/*------------------------------------------------------------------ Copyright -------------------------------------------------------------------*/
+ .footer-copyright{
+     background: #000000;
+     padding: 10px 0px;
+     position: relative;
+}
+ .footer-copyright p {
+     text-align: center;
+     color: #160c9f;
+     font-size: 18px;
+}
+ .footer-copyright p a{
+     color: #1927c0;
+}
+ .footer-copyright p a:hover{
+     color: #b0b435;
+}
+/*------------------------------------------------------------------ All Pages -------------------------------------------------------------------*/
+
+ .about-box-main{          /* day la about */
+     padding-top: 100px;
+     padding: 50px;
+}
+.about-box-main h2{
+    font-size: 20px;
+    padding-top: 15px;
+    font-style: normal;
+    font-weight: 500;
+}
+.about-box-main h3{
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 15px;
+}
+
+.about-box-main h1{ 
+     font-size: 28px;
+     font-style: normal;
+     font-weight: 700;
+     padding-bottom: 50px;
+
+}
+ .about-box-main p{
+     padding-bottom: 10px;
+     font-size: 15px;
+}
+.about-box-main h4{
+    padding-top: 30px;
+}
+
+/*----------------------------- Tat ca san pham----------------------- */
+ .shop-box-inner{
+     padding: 70px 0px;
+}
+ .search-product {
+     position: relative;
+}
+ .search-product input[type="text"] {
+     background: #333333;
+     box-shadow: none;
+     color: #ffffff;
+     height: 55px;
+     font-weight: 300;
+     font-size: 18px;
+     margin-bottom: 15px;
+     padding: 0 20px;
+}
+
+ .search-product button {     /* nut tim kiem */
+     background: #000000;
+     color: #ffffff;
+     font-size: 18px;
+     position: absolute;
+     right: 0px;
+     padding: 12px 15px;
+     top: 0;
+     line-height: 27px;
+     border: none;
+     height: 100%;
+}
+ .search-product button:hover{   /* nut tim kiem */
+     background: #b0b435;
+}           
+ .product-item-filter{            /* Tat ca san pham */
+     border-bottom: 1px solid #000000;
+     padding: 5px 0;
+}   
+ .product-categorie-box{
+     margin-top: 30px;
+}
+ .cart-box-main{
+     padding: 70px 0px;
+}
+
+/********************************** GIO HANG ********************************************/
+ .table-main table thead{            /* Thanh menu gio hang */
+     background: #b0b435;
+     color: #ffffff;
+}
+ .table-main .table thead th{        /* size chu thanh menu gio hang */
+     font-size: 18px;
+}
+ .table-main table td.thumbnail-img{    /* kich thuoc hinh anh */
+     width: 120px;
+}
+ .table-main table td{                  /* kich thuoc ten sp gia sl */
+     vertical-align: middle;
+     font-size: 16px;
+}
+ .name-pr a{                            /* ten san pham */
+     font-weight: 500;
+     font-size: 18px;
+     color: #000000;
+}
+.order-box{                        /* Dat hang */
+    padding-top: 100px;
+}
+
+ .order-box h4 {                         /* Dat hang */
+     font-size: 16px;
+     padding: 0px;
+     line-height: 35px !important;
+}
+ .order-box .font-weight-bold{
+     font-size: 18px;
+}
+ .gr-total h5 {                    /* Dat hang - Tong tien hang */
+     font-weight: 700;
+     color: #b0b435;
+     font-size: 18px;
+     margin: 0px;
+     padding: 0px;
+     line-height: 35px !important;
+}
+.gr-total .h5{                        /* Dat hang - tien hang */
+        margin: 0px;
+        font-weight: 700;
+        line-height: 35px;
+}
+/*--------------------------------------------*/    
+ .shopping-box a{
+     font-size: 18px;
+     color: #ffffff;
+     border: none;
+     padding: 10px 20px;
+}
+
+ .needs-validation label {              /* kich thuoc o dat hang */
+     font-size: 16px;
+     margin-bottom: 0px;
+     line-height: 30px;
+}
+ .needs-validation .form-control {       /* kich thuoc o dat hang */
+     min-height: 40px;
+     border-radius: 0px;
+     border: 1px solid #e8e8e8;
+     box-shadow: none !important;
+     font-size: 14px;
+}
+ .needs-validation .form-control:focus {        /* o dat hang */
+     border: 1px solid #b0b435 !important;
+}
+ .form-row .form-control{    /* o dang nhap/ dang ky */
+     min-height: 40px;
+     border-radius: 0px;
+     border: 1px solid #e8e8e8;
+     box-shadow: none !important;
+     font-size: 14px;
+}
+.cart-box-main h3{                 /* dang nhap / dang ky tai khoan / dia chi nhan hang */
+    padding-bottom: 50px;
+    font-size: 30px;
+    font-weight: 700;
+}
+ .add-pr a{
+     padding: 10px 20px;
+     font-weight: 700;
+     color: #ffffff;
+     border: none;
+}
+/*----------------------------- San pham yeu thich---------------------------------*/
+ .wishlist-box-main{
+     padding: 70px 0px;
+}
+ .wishlist-box-main h3{
+    font-size: 30px;
+    padding-bottom: 50px;
+    font-weight: 700    ;
+ }
+/*--------------- Phan hoi -------------*/
+ .contact-box-main{
+     padding: 70px 0px;
+}
+ .contact-form-right{
+     padding: 20px;
+}
+ .contact-form-right h2{              /* tieu de phan hoi */
+     font-size: 30px;
+     font-weight: 700;
+     margin-bottom: 30px;
+}
+ .contact-form-right p{
+     margin-bottom: 25px;
+     font-size: 16px;
+}
+ .contact-form-right .form-group .form-control{
+     border-radius: 0px;
+     min-height: 40px;
+}
+ .contact-form-right .form-group {
+     margin-bottom: 25px;
+     position: relative;
+}
+ .contact-form-right .form-group .form-control:focus{   /* khung o phan hoi */
+     border: 1px solid #b0b435;
+     box-shadow: none;
+}
+ .submit-button button{     /* nut gui */
+     padding: 10px 20px;
+     font-weight: 700;
+     color: #ffffff;
+     border: none;
+}
